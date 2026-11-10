@@ -1,24 +1,24 @@
 # 🎙️ Meeting Summarizer (TransMeet)
 
-Hệ thống AI tự động chuyển đổi file ghi âm cuộc họp (âm thanh/video như `.mp4`, `.mp3`, `.wav`) thành văn bản và tạo biên bản tóm tắt cuộc họp (Meeting Minutes) chi tiết.
+Hệ thống tự động chuyển đổi file ghi âm cuộc họp (âm thanh/video như `.mp4`, `.mp3`, `.wav`) thành văn bản và tạo biên bản tóm tắt cuộc họp (Meeting Minutes) chi tiết.
 
 ---
 
-## ✨ Tính năng chính
+##  Tính năng chính
 
-- 🎧 **Hỗ trợ đa định dạng**: Chấp nhận cả file âm thanh (`.mp3`, `.wav`, `.m4a`) và file video (`.mp4`, `.mkv`, `.mov`) mà không cần convert thủ công.
-- ⚡ **Gỡ băng siêu tốc**: Sử dụng mô hình **Whisper-large-v3-turbo** qua Groq API (xử lý cuộc họp 2 tiếng trong vòng chưa đầy 30 giây).
-- 🧠 **Tóm tắt chuyên nghiệp bằng LLM**: Sử dụng `openai/gpt-oss-120b` (hoặc `gpt-4o-mini`) để trích xuất:
+-  **Hỗ trợ đa định dạng**: Chấp nhận cả file âm thanh (`.mp3`, `.wav`, `.m4a`) và file video (`.mp4`, `.mkv`, `.mov`) mà không cần convert thủ công.
+-  **Gỡ băng siêu tốc**: Sử dụng mô hình **Whisper-large-v3-turbo** qua Groq API (xử lý cuộc họp 2 tiếng trong vòng chưa đầy 30 giây).
+-  **Tóm tắt chuyên nghiệp bằng LLM**: Sử dụng `openai/gpt-oss-120b` (hoặc `gpt-4o-mini`) để trích xuất:
   - Thông tin và thành phần tham gia cuộc họp.
   - Các chủ đề cốt lõi đã thảo luận (Agenda Topics).
   - Các quyết định quan trọng đã chốt (Key Decisions).
   - Bảng phân công nhiệm vụ cụ thể (**Action Items**: Task, Assignee, Deadline).
   - Rủi ro, khúc mắc và tổng kết cuộc họp.
-- 🪓 **Tự động chia nhỏ (Chunking) & Tối ưu TPM**: Tự động chia nhỏ video/audio dài hàng giờ để tránh giới hạn kích thước file và tránh vượt quá hạn mức Token Per Minute (TPM) của LLM.
+-  **Tự động chia nhỏ (Chunking) & Tối ưu TPM**: Tự động chia nhỏ video/audio dài hàng giờ để tránh giới hạn kích thước file và tránh vượt quá hạn mức Token Per Minute (TPM) của LLM.
 
 ---
 
-## 🚀 Cài đặt & Sử dụng
+##  Cài đặt & Sử dụng
 
 ### 1. Cài đặt môi trường
 Yêu cầu hệ thống đã cài đặt [FFmpeg](https://ffmpeg.org/) và Python 3.10+.
