@@ -1,4 +1,4 @@
-# 🎙️ Meeting Summarizer (TransMeet)
+TransMeet
 
 Hệ thống tự động chuyển đổi file ghi âm cuộc họp (âm thanh/video như `.mp4`, `.mp3`, `.wav`) thành văn bản và tạo biên bản tóm tắt cuộc họp (Meeting Minutes) chi tiết.
 
